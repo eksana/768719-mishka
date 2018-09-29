@@ -40,7 +40,7 @@
       <h1 class="main-title">Вязание на заказ</h1>
 
       <div class="form-description">
-        <p class="orm-description__text">
+        <p class="form-description__text">
           Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
         </p>
       </div>
@@ -49,43 +49,43 @@
         <h2 class="visually-hidden">Форма заказа</h2>
         <form class="form__order" method="post" action="https://echo.htmlacademy.ru">
           <fieldset class="form__filter">
-            <legend class="filter__title form-title">Тип</legend>
-            <ul class="filter__list">
-              <li class="filter-option">
-                <input class="visually-hidden filter__input filter__radio filter__radio--checked" type="radio" name="type-product" value="decoration" id="decoration" checked>
+            <legend class="form__title">Тип</legend>
+            <ul class="form__list">
+              <li class="form-option">
+                <input class="visually-hidden form__input form__radio form__radio--checked" type="radio" name="type-product" value="decoration" id="decoration" checked>
                 <label for="decoration">Аксессуар для интерьера</label>
               </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter__input filter__radio" type="radio" name="type-product" value="toy" id="toy">
+              <li class="form-option">
+                <input class="visually-hidden form__input form__radio" type="radio" name="type-product" value="toy" id="toy">
                 <label for="toy">Детская игрушка</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="form__filter">
-            <legend class="filter__title form-title">Цвет</legend>
-            <ul class="filter__list">
-              <li class="filter__option">
-                <input class="visually-hidden filter__input filter__checkbox--checked" type="checkbox" name="white" id="white" checked>
+            <legend class="form-title">Цвет</legend>
+            <ul class="form__list">
+              <li class="form__option">
+                <input class="visually-hidden form__input form__checkbox--checked" type="checkbox" name="white" id="white" checked>
                 <label for="white">Белый</label>
               </li>
-              <li class="filter__option">
-                <input class="visually-hidden filter__input filter__checkbox--checked" type="checkbox" name="gray" id="gray" checked>
+              <li class="form__option">
+                <input class="visually-hidden form__input form__checkbox--checked" type="checkbox" name="gray" id="gray" checked>
                 <label for="gray">Серый</label>
               </li>
-              <li class="filter__option">
-                <input class="visually-hidden filter__input filter__checkbox" type="checkbox" name="tiffany" id="tiffany">
+              <li class="form__option">
+                <input class="visually-hidden form__input form__checkbox" type="checkbox" name="tiffany" id="tiffany">
                 <label for="tiffany">«Тиффани»</label>
               </li>
-              <li class="filter__option">
-                <input class="visually-hidden filter__input filter__checkbox" type="checkbox" name="black" id="black">
+              <li class="form__option">
+                <input class="visually-hidden form__input form__checkbox" type="checkbox" name="black" id="black">
                 <label for="black">Черный</label>
               </li>
-              <li class="filter__option">
-                <input class="visually-hidden filter__input filter__checkbox" type="checkbox" name="pink" id="pink">
+              <li class="form__option">
+                <input class="visually-hidden form__input form__checkbox" type="checkbox" name="pink" id="pink">
                 <label for="pink">Розовый</label>
               </li>
-              <li class="filter__option">
-                <input class="visually-hidden filter__input filter__checkbox" type="checkbox" name="orange" id="orange">
+              <li class="form__option">
+                <input class="visually-hidden form__input form__checkbox" type="checkbox" name="orange" id="orange">
                 <label for="orange">Оранжевый</label>
               </li>
             </ul>
@@ -93,31 +93,31 @@
           <div class="appointment">
             <ul class="appointment__list">
               <li class="appointment__item">
-                <span class="appointment__title appointment__title--common">ФИО</span>
-                <ul class="user-name__list">
-                  <li class="user-name__item">
-                    <label class="appointment__label appointment-subtitle" for="appointment__name">Имя:</label>
+                <span class="form-title">ФИО</span>
+                <ul class="appointment__sublist">
+                  <li class="appointment__item">
+                    <label class="appointment__label" for="appointment__name">Имя:</label>
                     <input class="appointment__input" id="appointment__name" type="text" name="name" value="" placeholder="Введите ваше имя*">
                   </li>
-                  <li class="user-name__item">
-                    <label class="appointment__label appointment-subtitle" for="appointment__surname">Фамилия:</label>
+                  <li class="appointment__item">
+                    <label class="appointment__label" for="appointment__surname">Фамилия:</label>
                     <input class="appointment__input" id="appointment__surname" type="text" name="surname" value="" placeholder="Укажите фамилию*">
                   </li>
-                  <li class="user-name__item">
-                    <label class="appointment__label appointment-subtitle" for="appointment__middle-name">Отчество:</label>
+                  <li class="appointment__item">
+                    <label class="appointment__label" for="appointment__middle-name">Отчество:</label>
                     <input class="appointment__input" id="appointment__middle-name" type="text" name="middle-name" value="" placeholder="Отчество, если желаете*">
                   </li>
                 </ul>
               <li class="appointment__item">
-                <label class="appointment__title appointment__label" for="appointment__tel">Тел</label>
+                <label class="form__title" for="appointment__tel">Тел</label>
                 <input class="appointment__input appointment__input--tel" id="appointment__tel" type="tel" name="telephone" value="" placeholder="+7 XXX XXX XX XX*">
               </li>
               <li class="appointment__item">
-                <label class="appointment__title appointment__label" for="appointment__email">E-mail</label>
+                <label class="form__title" for="appointment__email">E-mail</label>
                 <input class="appointment__input appointment__input--letter" id="appointment__email" type="email" name="email" value="" placeholder="Ваш Email*">
               </li>
               <li class="appointment__item">
-                <label class="appointment__title appointment__label" for="appointment__text">Доп</label>
+                <label class="form__title" for="appointment__text">Доп</label>
                 <textarea class="appointment__input appointment__input--letter" id="appointment__text" name="text" placeholder="Опишите все ваши пожелания к заказу" rows="10" cols="45"></textarea>
               </li>
             </ul>
@@ -129,7 +129,7 @@
       </section>
     </main>
 
-    <footer class="page-footer container">
+    <footer class="page-footer">
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
