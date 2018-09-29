@@ -37,15 +37,16 @@
     </header>
 
     <main class="page-form">
+
       <h1 class="main-title">Вязание на заказ</h1>
 
-      <div class="form-description">
-        <p class="form-description__text">
+      <div class="page-form__description description">
+        <p class="description__text">
           Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
         </p>
       </div>
 
-      <section class="form">
+      <section class="page-form__content form">
         <h2 class="visually-hidden">Форма заказа</h2>
         <form class="form__order" method="post" action="https://echo.htmlacademy.ru">
           <fieldset class="form__filter">
@@ -53,11 +54,11 @@
             <ul class="form__list">
               <li class="form-option">
                 <input class="visually-hidden form__input form__radio form__radio--checked" type="radio" name="type-product" value="decoration" id="decoration" checked>
-                <label for="decoration">Аксессуар для интерьера</label>
+                <label class="form__label" for="decoration">Аксессуар для интерьера</label>
               </li>
               <li class="form-option">
                 <input class="visually-hidden form__input form__radio" type="radio" name="type-product" value="toy" id="toy">
-                <label for="toy">Детская игрушка</label>
+                <label class="form__label" for="toy">Детская игрушка</label>
               </li>
             </ul>
           </fieldset>
@@ -66,59 +67,59 @@
             <ul class="form__list">
               <li class="form__option">
                 <input class="visually-hidden form__input form__checkbox--checked" type="checkbox" name="white" id="white" checked>
-                <label for="white">Белый</label>
+                <label class="form__label" for="white">Белый</label>
               </li>
               <li class="form__option">
                 <input class="visually-hidden form__input form__checkbox--checked" type="checkbox" name="gray" id="gray" checked>
-                <label for="gray">Серый</label>
+                <label class="form__label" for="gray">Серый</label>
               </li>
               <li class="form__option">
                 <input class="visually-hidden form__input form__checkbox" type="checkbox" name="tiffany" id="tiffany">
-                <label for="tiffany">«Тиффани»</label>
+                <label class="form__label" for="tiffany">«Тиффани»</label>
               </li>
               <li class="form__option">
                 <input class="visually-hidden form__input form__checkbox" type="checkbox" name="black" id="black">
-                <label for="black">Черный</label>
+                <label class="form__label" for="black">Черный</label>
               </li>
               <li class="form__option">
                 <input class="visually-hidden form__input form__checkbox" type="checkbox" name="pink" id="pink">
-                <label for="pink">Розовый</label>
+                <label class="form__label" for="pink">Розовый</label>
               </li>
               <li class="form__option">
                 <input class="visually-hidden form__input form__checkbox" type="checkbox" name="orange" id="orange">
-                <label for="orange">Оранжевый</label>
+                <label class="form__label" for="orange">Оранжевый</label>
               </li>
             </ul>
           </fieldset>
-          <div class="appointment">
+          <div class="form__appointment appointment">
             <ul class="appointment__list">
               <li class="appointment__item">
                 <span class="form-title">ФИО</span>
-                <ul class="appointment__sublist">
-                  <li class="appointment__item">
-                    <label class="appointment__label" for="appointment__name">Имя:</label>
-                    <input class="appointment__input" id="appointment__name" type="text" name="name" value="" placeholder="Введите ваше имя*">
+                <ul class="appointment__sublist sublist">
+                  <li class="sublist__item">
+                    <label class="sublist__label form__label" for="name">Имя:</label>
+                    <input class="sublist__input input" id="name" type="text" name="name" value="" placeholder="Введите ваше имя*">
                   </li>
-                  <li class="appointment__item">
-                    <label class="appointment__label" for="appointment__surname">Фамилия:</label>
-                    <input class="appointment__input" id="appointment__surname" type="text" name="surname" value="" placeholder="Укажите фамилию*">
+                  <li class="sublist__item">
+                    <label class="sublist__label form__label" for="surname">Фамилия:</label>
+                    <input class="sublist__input input" id="surname" type="text" name="surname" value="" placeholder="Укажите фамилию*">
                   </li>
-                  <li class="appointment__item">
-                    <label class="appointment__label" for="appointment__middle-name">Отчество:</label>
-                    <input class="appointment__input" id="appointment__middle-name" type="text" name="middle-name" value="" placeholder="Отчество, если желаете*">
+                  <li class="sublist__item">
+                    <label class="sublist__label form__label" for="middle-name">Отчество:</label>
+                    <input class="sublist__input input" id="middle-name" type="text" name="middle-name" value="" placeholder="Отчество, если желаете*">
                   </li>
                 </ul>
               <li class="appointment__item">
-                <label class="form__title" for="appointment__tel">Тел</label>
-                <input class="appointment__input appointment__input--tel" id="appointment__tel" type="tel" name="telephone" value="" placeholder="+7 XXX XXX XX XX*">
+                <label class="form__title" for="tel">Тел</label>
+                <input class="appointment__input appointment__input--tel input" id="tel" type="tel" name="telephone" value="" placeholder="+7 XXX XXX XX XX*">
               </li>
               <li class="appointment__item">
-                <label class="form__title" for="appointment__email">E-mail</label>
-                <input class="appointment__input appointment__input--letter" id="appointment__email" type="email" name="email" value="" placeholder="Ваш Email*">
+                <label class="form__title" for="email">E-mail</label>
+                <input class="appointment__input appointment__input--letter input" id="email" type="email" name="email" value="" placeholder="Ваш Email*">
               </li>
               <li class="appointment__item">
-                <label class="form__title" for="appointment__text">Доп</label>
-                <textarea class="appointment__input appointment__input--letter" id="appointment__text" name="text" placeholder="Опишите все ваши пожелания к заказу" rows="10" cols="45"></textarea>
+                <label class="form__title" for="text">Доп</label>
+                <textarea class="appointment__input input" id="text" name="text" placeholder="Опишите все ваши пожелания к заказу"</textarea>
               </li>
             </ul>
             <p class="appointment__clarification">
